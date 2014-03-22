@@ -9,13 +9,40 @@
    One time padを2回使うと?
 
  - いろいろな攻撃モデル
-   盗聴
-   改ざん
-
+   盗聴 <--- 今回はこちらを主に対象に
+   改ざん <--- 実際にはこちらも重要
 
  - ストリーム暗号
    One time padの問題点
    擬似乱数生成
-   暗号に利用できない乱数生成
+   暗号に利用できない擬似乱数生成 random.rb
+   ストリーム暗号の例
+    - RC4 
 
+ - ブロック暗号
+   1ブロック(特定のサイズ）単位の暗号
+   Psudo Rundom Permutation
+   ブロック暗号の例
+    - DES
+    - AES
+
+   ブロックサイズより大きなサイズのメッセージの暗号化
+   ブロック暗号のモード
+   ECBモード   http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation
+   CBCモード
+   nonceとIV
+
+ - 鍵交換アルゴリズム
+   事前準備
+     - Modulo演算
+     - Groupの性質
+   離散対数問題
+   Diffie-Helman 鍵交換 
  
+ - 公開鍵暗号
+   2つの鍵を用意
+   公開鍵暗号の一方式RSA
+   RSAの基本的な考え方
+     p*qのinvertableなセット
+     p*q と e*dの関係
+   実際のRSA暗号
